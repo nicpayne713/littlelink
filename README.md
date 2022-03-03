@@ -1,4 +1,36 @@
+# LittleLink (Docker version)
+
+This project is a fork of [LittleLink](https://github.com/sethcottle/littlelink). I wanted to create a Docker version to deploy myself.
+
+To help you start with creating a container from this image, you can either use docker-compose or the docker command line after building the image.
+
+### docker-compose (recommended)
+
+```
+version: "3"
+services: 
+  little-link:
+    build: .
+    container_name: littlelink-server
+    ports: 
+      - 8000:80
+```
+
+### docker commandline
+
+```
+docker build -t little-link:latest .
+
+docker run -d \
+  --name=littlelink-server \
+  -p 8000:80  # host port 8000
+  little-link
+```
+
+Then you can visit your little link at [ localhost:8000 ]( localhost:8000 )
+
 # 🔗 LittleLink
+
 
 ![LittleLink](https://cdn.cottle.cloud/littlelink/social-circle.png)
 
