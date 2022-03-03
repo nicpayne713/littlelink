@@ -1,6 +1,6 @@
 # LittleLink (Docker version)
 
-This project is a fork of [LittleLink](https://github.com/sethcottle/littlelink). I wanted to create a Docker version to deploy myself.
+Fork of [LittleLink](https://github.com/sethcottle/littlelink) to create a self-hostable Docker version to deploy in my homelab.
 
 To help you start with creating a container from this image, you can either use docker-compose or the docker command line after building the image.
 
