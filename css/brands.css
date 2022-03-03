@@ -192,6 +192,16 @@ button:hover,
   filter: brightness(90%);
 }
 
+/* Gitea */
+.button.button-gitea {
+  color: #ffffff;
+  background-color: #6d727a;
+}
+.button.button-gitea:hover,
+.button.button-gitea:focus {
+  filter: brightness(90%);
+}
+
 /* Gitlab */
 .button.button-gitlab {
   color: #ffffff;
