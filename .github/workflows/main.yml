@@ -17,6 +17,7 @@ jobs:
         uses: moodiest/push-to-branch-action@develop
         env:
           REPO: self
-          BRANCH: gh-pages
+          BRANCH: gh-pages 
+          FOLDER: .
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
