@@ -11,13 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: GitHub Pages
+      
+      # Deploy to local repo
+      - name: Deploy
+        uses: moodiest/push-to-branch-action@develop
         env:
+          REPO: self
+          BRANCH: gh-pages
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: crazy-max/ghaction-github-pages@v2.6.0
-        with:
-          target_branch: gh-pages
-          build_dir: /
-          jekyll: false
 
