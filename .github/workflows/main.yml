@@ -11,10 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: move
+        run: mv dist/* .
 
       - name: commit to gh-pages
         run: |
-          mv dist/* .
           git checkout -b gh-pages
           git add .
           git commit -m "update littlle link"
