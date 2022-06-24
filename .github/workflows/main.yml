@@ -14,5 +14,8 @@ jobs:
 
       - name: commit to gh-pages
         run: |
+          mv dist/* .
           git checkout -b gh-pages
+          git add .
+          git commit -m "update littlle link"
           git push -u origin gh-pages --force
