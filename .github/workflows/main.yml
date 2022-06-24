@@ -17,8 +17,8 @@ jobs:
         uses: moodiest/push-to-branch-action@develop
         env:
           REPO: self
-          BRANCH: gh-pages
-          FOLDER: .
+          BRANCH: gh-pages 
+          FOLDER: dist
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "This updates the content to the commit {sha} that had the message:\n{msg}"
 
