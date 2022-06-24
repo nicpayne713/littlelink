@@ -20,4 +20,5 @@ jobs:
           BRANCH: gh-pages-2
           FOLDER: .
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "This updates the content to the commit {sha} that had the message:\n{msg}"
 
