@@ -14,7 +14,7 @@ jobs:
       
       # Deploy to local repo
       - name: Deploy
-        uses: moodiest/push-to-branch-action@develop
+        uses: moodiest/push-to-branch-action@main
         env:
           REPO: self
           BRANCH: gh-pages 
